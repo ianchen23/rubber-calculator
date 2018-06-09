@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AAI Rubber Calculator</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h4>Rubber Required:</h4>
+            <h1><span id="result">0</span> lb/tool</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Rubber OD (inch):</p>
+                <p><input class="form-control" type="number" name="rubberOD" value="5.6"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Mandrel OD (inch):</p>
+                <p><input class="form-control" type="number" name="mandrelOD" value="4.5"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Element Length (inch):</p>
+                <p><input class="form-control" type="number" name="elemLen" value="72"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Rubber Type:</p>
+                <p>
+                    <select class="form-control" name="rubberType">
+                        <option value="577">577</option>
+                        <option value="834">834</option>
+                        <option value="553">553</option>
+                        <option value="906">906</option>
+                        <option value="920">920</option>
+                        <option value="922">922</option>
+                        <option value="886">886</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Rubber Density: <span id="rubberDensity">0.046 lb/in<sup>3</sup></span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Overwrap: <span id="overwrap">0.5"</span></p>
+            </div>
+        </div>
+        <button class="btn btn-primary btn-block">Calculate!</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
